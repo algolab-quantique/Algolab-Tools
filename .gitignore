@@ -1,0 +1,6 @@
+#Mac OS crap
+.DS_store
+
+#local settings
+.pre-commit-config.yaml
+.vscode

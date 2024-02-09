@@ -1,0 +1,23 @@
+[build-system]
+requires = ["flit_core >=3.2,<4","wheel"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "Algolab_tools"
+authors = [{name = "Alexandre Foley", email = "Alexandre.Foley@usherbrooke.ca"}]
+dynamic = ["version", "description"]
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "numpy",
+    "scipy",
+    "qiskit",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+test= ["h5py"]
+doc = ["sphinx"]
+[project.urls]
+Home = "https://github.com/algolab-quantique/Algolab_tools.git"

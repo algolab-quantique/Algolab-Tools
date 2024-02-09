@@ -37,13 +37,15 @@ def IBMQ_properties_to_pandas(
 ):
     """
     extract an IBMQ backend properties to a pandaframes.
-    Useful because calling backend.properties(datetime) allow us to fetch the properties object of the backend at the specified datetime.
+    Useful because calling backend.properties(datetime) allow us to fetch the
+    properties object of the backend at the specified datetime.
     arguments:
-        properties: A BackendProperties backend description object, object supplied by IBM_provider are compatible as of 9-02-2024. Mostly undocumented stuff.
-                 FakeBackends in qiskit are not compatible.
+        properties: A BackendProperties backend description object, object supplied by IBM_provider
+                    are compatible as of 9-02-2024. Mostly undocumented stuff.
+                    FakeBackends in qiskit are not compatible.
         oneqb_gate_set: one qubit (non virtual) gate set to look for in the prop_dict, default to eagle's gate set.
         twoqb_gate_set: two qubit gate set to look for in the prop_dict, default to ECR based eagle's gate set
-    return four objects:
+    Return four objects:
         First a pandas frame of most of the interesting properties of the
             quantum computer, T1 T2 Frequencies, errors gate fidelities and time.
             More or less reproduce the IBM cloud table view of backend's properties.
@@ -54,7 +56,7 @@ def IBMQ_properties_to_pandas(
     information in the supplied prop_dict, except maybe for the backend name.
 
     The last three correspond directly to three substructure in the properties dict
-    that contain the actual device information. Backend name is not contained dataframe.
+    that contain the actual device information. Backend name is not contained dataframe those last three data frame.
     """
     return IBMQ_backend_prop_dict2panda(
         properties.to_dict(), oneqb_gate_set, twoqb_gate_set
@@ -69,11 +71,12 @@ def IBMQ_backend_to_pandas(
     """
     extract an IBMQ backend properties to a pandaframes.
     arguments:
-        backend: A Backend backend description object, object supplied by IBM_provider are compatible as of 9-02-2024. Mostly undocumented stuff.
+        backend: A Backend backend description object, object supplied by
+                 IBM_provider are compatible as of 9-02-2024. Mostly undocumented stuff.
                  FakeBackends in qiskit are not compatible.
         oneqb_gate_set: one qubit (non virtual) gate set to look for in the prop_dict, default to eagle's gate set.
         twoqb_gate_set: two qubit gate set to look for in the prop_dict, default to ECR based eagle's gate set
-    return four objects:
+    Return four objects:
         First a pandas frame of most of the interesting properties of the
             quantum computer, T1 T2 Frequencies, errors gate fidelities and time.
             More or less reproduce the IBM cloud table view of backend's properties.

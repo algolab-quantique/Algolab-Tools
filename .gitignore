@@ -4,3 +4,14 @@
 #local settings
 .pre-commit-config.yaml
 .vscode
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Virtual env
+env/
+
+#pdf, ignore by default.
+*.pdf

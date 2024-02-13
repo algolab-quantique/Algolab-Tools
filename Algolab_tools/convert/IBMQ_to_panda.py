@@ -107,8 +107,8 @@ def IBMQ_backend_prop_dict2panda(
         First a pandas frame of most of the interesting properties of the
             quantum computer, T1 T2 Frequencies, errors gate fidelities and time.
             More or less reproduce the IBM cloud table view of backend's properties.
-        Second a pandas frame of the complete qubit properties
-        Third a pandas frame of the complete gate properties
+        Second, the qubit dataframe: a pandas frame of the complete qubit properties
+        Third, the gate dataframe: a pandas frame of the complete gate properties
         Fourth a pandas frame of other quantities.
     Together, the second third and fourth return values contains all the available
     information in the supplied prop_dict, except maybe for the backend name.
@@ -177,9 +177,6 @@ def IBMQ_backend_prop_dict2panda(
             ][
                 "value"
             ],
-            f"One qubit gate time ({gate_dataframe[one_qbit_filters[0]]['gate_time_unit'].tolist()[0]})": mean_1qb_time,
-            # "ECR error":ECR_error_entry,
-            # f"Two qubits gate time ({gate_dataframe[ecr_gate_filter].gate_time_unit.tolist()[0]})":"pouet",
         }
         for filter in one_qbit_filters:
             filtered_gdf = gate_dataframe[filter]

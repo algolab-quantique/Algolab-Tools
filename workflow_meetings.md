@@ -14,10 +14,19 @@
 
 ## Mac OS
 - Spacebar open folder while drag and dropping
+- `shift`+`cmd`+`.` to show hidden files (brace yourself)
 - `cmd`+`I` to open the "file inspector"
   - contains the "always open these files with" feature
-  - 
+  - see hidden filename extension
 - `cmd`+`J` to open the "views options" let you set the default apearance for folders 
+  - calculate all sizes option
+  - open in list view
+  - set default view
+  - icon size
+  - text size
+
+## Hidden customization in Preferences
+- Keyboard -> Keyboard Shortcuts -> Services -> New Terminal at Folder
 
 ## Customization requiring teminal commands
 Faster cursor movement with keyboard:

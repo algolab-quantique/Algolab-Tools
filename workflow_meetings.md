@@ -4,7 +4,11 @@
 ## Github
 
 ## Terminal / Bash
-- `ctrl`+`L` instead of `clear` will get a fresh screen by moving the screen down without clearing what's above the cursor
+- `ctrl`+`L` Instead of `clear` will get a fresh screen by moving the screen down without clearing what's above the cursor
+- `cmd`+`L` To remove the last line
+- `ctrl`+ `A` Go to the beginning
+- `ctrl` + `E` Go to the end of the line
+- see other emacs modifiers
 
 ## Keynote
 - right click toolbar and `edit toolbar` to find hidden features
@@ -71,7 +75,9 @@ Faster cursor movement with keyboard:
 ### Multi-cursor workflow
 - `option`+`up`, `option`+`down' to move lines 
 - `option`+`cmd`+`up`, `option`+`cmd`+`down` to add cursor above, below
-- `cmd`+`d` to fin next appearance
+- `cmd`+`g` to find next appearance
+- `cmd`+`shift`+`g` to find previous appearance
+- `cmd`+`d` to find and select next appearance
 - `cmd`+`u` to undo cursor
 - `cmd`+`]`/`cmd`+`[` to indent/ unindent
 - `ctrl`+`-` to go back to last cursor location
